@@ -1,16 +1,41 @@
-# React + Vite
+# 🖥️ APV - Cliente Frontend (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interfaz de usuario moderna y reactiva para el **Administrador de Pacientes de Veterinaria**. Esta aplicación se conecta a una API REST personalizada para gestionar la administración de una clínica.
 
-Currently, two official plugins are available:
+### 🌐 [Ver Demo en Vivo (Netlify)](mernavp.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🛠️ Tecnologías y Herramientas
+- **Framework:** [React.js](https://reactjs.org) (Vite)
+- **Estado y Navegación:** React Router DOM & Context API.
+- **Estilos:** [Tailwind CSS](https://tailwindcss.com) (Diseño totalmente responsive).
+- **HTTP Client:** [Axios](https://axios-http.com) para el consumo de la API.
+- **Despliegue:** Netlify con integración continua (CI/CD).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📋 Funcionalidades Clave
+- **Gestión de Sesiones:** Autenticación basada en JWT almacenado de forma segura.
+- **Panel de Administración:** CRUD completo de pacientes (Crear, Editar, Eliminar y Visualizar).
+- **Confirmación de Cuentas:** Flujo de validación mediante tokens enviados por email.
+- **Formularios Dinámicos:** Validaciones en tiempo real para mejorar la experiencia de usuario (UX).
 
-## Expanding the ESLint configuration
+## 💻 Configuración Local
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+3. Crea un archivo `.env` y añade la URL de tu backend:
+   ```env
+   VITE_BACKEND_URL=https://tu-app-en-render.com
+   ```
+4. Inicia el proyecto:
+   ```bash
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+📡 **Backend Repositorio:** https://github.com/AdrianLuqueGit/apv_backend_deploy
